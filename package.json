@@ -1,0 +1,21 @@
+{
+  "author": {
+    "name": "Renan Veroneze"
+  },
+  "name": "grunt-jade-rewrite",
+  "description": "",
+  "version": "0.1.1",
+  "keywords": [
+    "grunt",
+    "jade",
+    "rewrite",
+    "mod_rewrite",
+    "url",
+    "template"
+  ],
+  "repository": {},
+  "readme": "ERROR: No README data found!",
+  "dependencies": {},
+  "_id": "grunt-jade-rewrite@0.1.0",
+  "_from": "grunt-jade-rewrite@"
+}
