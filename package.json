@@ -7,13 +7,14 @@
   "version": "0.1.1",
   "keywords": [
     "grunt",
+    "gruntplugin",
     "jade",
     "rewrite",
     "mod_rewrite",
     "url",
     "template"
   ],
-  "repository": {},
+  "repository": "renanveroneze/grunt-jade-rewrite",
   "readme": "ERROR: No README data found!",
   "dependencies": {},
   "_id": "grunt-jade-rewrite@0.1.0",
