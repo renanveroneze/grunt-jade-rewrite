@@ -26,7 +26,7 @@ module.exports = ( grunt ) ->
         for page in page_files
 
             view_name = path.basename page, '.jade'
-            need_auth = '1'
+            need_auth = '0'
             uri_rule = ''
 
             lines = fs.readFileSync( page_sources + page ).toString().split '\n'
@@ -40,7 +40,8 @@ module.exports = ( grunt ) ->
                     uri_rule = line.match( uri_rule_reg )[1]
 
                 if uri_auth_reg.test line
-                    need_auth = 0
+                    match = line.match( uri_auth_reg )[1] is 'true'
+                    need_auth = match && '1' || '0'
 
 
             output.push '\n\t"/' + uri_rule + '": { "view": "' + view_name + '", "auth": "' + need_auth + '"}'
