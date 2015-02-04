@@ -44,6 +44,6 @@ module.exports = ( grunt ) ->
                     need_auth = match && '1' || '0'
 
 
-            output.push '\n\t"/' + uri_rule + '": { "view": "' + view_name + '", "auth": "' + need_auth + '"}'
+            output.push '\n\t"/' + uri_rule + '": { "view": "' + view_name + '", "auth": "' + need_auth + '" }'
 
         fs.writeFileSync base + 'bin/controllers/routers.json', '{' + output.join() + '\n}'
